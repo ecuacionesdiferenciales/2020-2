@@ -1,0 +1,77 @@
+\documentclass[12pt]{article}
+\title{Crecimiento Continuo}
+\author{Ing. Lamberto Maza Casas}
+%\date{\today}
+\date{Marzo, 2020}
+\begin{document}
+\maketitle
+En este documento se presentan algunos comentarios sobre una ecuaci\'{o}n diferencial  
+para modelar el crecimiento continuo de una cantidad.
+\section{Crecimiento Continuo}
+Decimos que una cantidad $C$ tiene {\bf crecimiento continuo} a una tasa dada en porcentaje 
+$p>0$ si existe un n\'{u}mero f\/ijo $T>0$ tal que para cualesquiera n\'{u}meros reales 
+$t\in(-\infty,+\infty)$ y $|h|\in(0,T]$ se cumple que
+\begin{equation}
+c(Tt+h)=c(Tt)+\frac{h}{T}rc(Tt),\mbox{\ donde\ }r=\frac{p}{100}
+\end{equation}
+Tambi\'{e}n decimos que la cantidad $c$ crece $p$ ``por ciento'' cada $T$ unidades de tiempo; es decir, 
+$c$ crece con un factor de proporci\'{o}n $r=p/100$ cada $T$ unidades de tiempo.
+\section{Obtenci\'{o}n de la ecuaci\'{o}n diferencial de cre\-ci\-mien\-to continuo}
+Supongamos que la cantidad $y$ tiene crecimiento continuo a una tasa $p$. Entonces, sabemos que 
+existe $T>0$ para el cual cuando $t$ es un n\'{u}mero real y $|h|\in(0,T]$, entonces
+\begin{equation}
+y(Tt+h)=y(Tt)+\frac{h}{T}ry(Tt),\mbox{\ donde\ }r=\frac{p}{100}
+\end{equation}
+Lo cual signif\/ica que
+\begin{equation}
+\frac{y(Tt+h)-y(Tt)}{h}=\frac{r}{T}y(Tt)
+\end{equation}
+Si hacemos el cambio de variable $x=Tt$, obtenemos
+\begin{equation}
+\frac{y(x+h)-y(x)}{h}=\frac{r}{T}y(x)
+\end{equation}
+Si ahora tomamos el l\'{i}mite cuando $h\rightarrow 0$, obtenemos
+\begin{equation}
+\lim_{h\rightarrow 0}\frac{y(x+h)-y(x)}{h}=\lim_{h\rightarrow 0}\frac{r}{T}y(x)=\frac{r}{T}y(x)
+\end{equation}
+El lado derecho es la forma en que se calcula la derivada de $y$ con respecto a $x$. Por lo que hemos 
+llegado a la ecuaci\'{o}n diferencial
+\begin{equation}
+\frac{dy}{dx}=\frac{r}{T}y(x)
+\end{equation}
+Agregando la condici\'{o}n inicial $y(x_{0})=y_{0}$ (donde $x_{0}=Tt_{0}$) obtenemos un problema de valor inicial (o problema 
+de Cauchy):
+\begin{equation}
+\frac{dy}{dx}=\frac{r}{T}y(x),\mbox{\ donde\ }y(x_{0})=y_{0}
+\end{equation}
+La soluci\'{o}n general de este problema de valor inicial est\'{a} dada por
+\begin{equation}
+y(x)=y(x_{0})e^{\frac{r}{T}(x-x_{0})}
+\end{equation}
+Susttituyendo nuevamente el cambio de variable $x=Tt$ se llega a
+\begin{equation}
+y(Tt)=y(Tt_{0})e^{r(t-t_{0})}
+\end{equation}
+donde $y(Tt_{0})$ es cualquier valor real constante. Si def\/inimos la funci\'{o}n del tiempo $z(t)$ 
+como
+\begin{equation}
+z(t)=y(Tt)=y(Tt_{0})e^{r(t-t_{0})},\mbox{\ n\'{o}tese que }z(t_{0})=y(Tt_{0})
+\end{equation}
+obtenemos la funci\'{o}n que describe el crecimiento continuo de una cantidad cuando esta crece a 
+una tasa fija $p$ (en pocentaje) cada $T$ unidades de tiempo. ?`En cu\'{a}nto tiempo se duplica una 
+cantidad que crece a una tasa fija $p$ (en porcentaje) cada $T$ unidades de tiempo? En otras palabras, 
+?`cu\'{a}l es el valor de $t-t_{0}$ para el cual $z(t)=2z(t_{0})$?
+Para responder a la pregunta escribimos
+\begin{eqnarray}
+z(t)&=&2z(t_{0})\\
+z(t_{0})e^{r(t-t_{0})}&=&2z(t_{0})\\
+e^{r(t-t_{0})}&=&2\\
+r(t-t_{0})&=&ln(2)\\
+t-t_{0}&=&\frac{ln(2)}{r}\label{EcQuince}
+\end{eqnarray}
+Si se expresa el factor de proporcionalidad en funci\'{o}n de la tasa de crecimiento $p$ en porcentaje 
+obtenemos $r=p/100$, sustituyendo esto en la ecuaci\'{o}n (\ref{EcQuince}) llegamos a
+\begin{equation}
+t-t_{0}=\frac{100ln(2)}{p}=\frac{100(0.6931)}{p}\approx\frac{70}{p}
+\end{equation}
+\end{document}
