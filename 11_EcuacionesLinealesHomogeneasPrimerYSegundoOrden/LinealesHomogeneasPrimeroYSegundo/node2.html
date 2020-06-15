@@ -1,0 +1,286 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Ecuaci&#243;n diferencial lineal homog&#233;nea de segundo orden</TITLE>
+<META NAME="description" CONTENT="Ecuaci&#243;n diferencial lineal homog&#233;nea de segundo orden">
+<META NAME="keywords" CONTENT="LinealesHomogeneasPrimeroYSegundo">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="LinealesHomogeneasPrimeroYSegundo.css">
+
+<LINK REL="next" HREF="node3.html">
+<LINK REL="previous" HREF="node1.html">
+<LINK REL="up" HREF="LinealesHomogeneasPrimeroYSegundo.html">
+<LINK REL="next" HREF="node3.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html28"
+  HREF="node3.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html26"
+  HREF="LinealesHomogeneasPrimeroYSegundo.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html20"
+  HREF="node1.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html29"
+  HREF="node3.html">Soluci&#243;n de la ecuaci&#243;n</A>
+<B> Up:</B> <A NAME="tex2html27"
+  HREF="LinealesHomogeneasPrimeroYSegundo.html">LinealesHomogeneasPrimeroYSegundo</A>
+<B> Previous:</B> <A NAME="tex2html21"
+  HREF="node1.html">Ecuaciones diferenciales lineales de</A>
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00020000000000000000">
+Ecuaci&#243;n diferencial lineal   homog&#233;nea de segundo orden</A>
+</H1>
+Consideremos el circuito RLC serie sin fuente de la siguiente figura
+
+<DIV ALIGN="CENTER"><A NAME="76"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 2:</STRONG>
+
+Circuito RLC sin fuente
+</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+<!--
+[width=6cm]./images/CIRCUITO_RLC_serie.jpg
+-->
+<IMG src=./images/CIRCUITO_RLC_serie.jpg />
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+Suponiendo valores de <SPAN CLASS="MATH"><IMG
+ WIDTH="16" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img19.png"
+ ALT="$R$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img20.png"
+ ALT="$L$"></SPAN> y <SPAN CLASS="MATH"><IMG
+ WIDTH="16" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$C$"></SPAN> constantes, derivaremos a continuaci&#243;n una ecuaci&#243;n diferencial de segundo orden que describe el comportamiento del circuito de la figura anterior. Dado que los tres elementos del circuito est&#225;n conectados en serie, la corriente <SPAN CLASS="MATH"><IMG
+ WIDTH="9" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img21.png"
+ ALT="$i$"></SPAN> indicada para el capacitor, con la direcci&#243;n adecuada es tambi&#233;n la corriente en la inductancia y en el resistor. De la ley de voltajes de Kirchhoff, tenemos que
+<BR>
+<DIV ALIGN="RIGHT" CLASS="mathdisplay">
+
+<!-- MATH
+ \begin{equation}
+v_{R}+v+v_{L}=0
+\end{equation}
+ -->
+<A NAME="EcuNplus7"></A>
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><A NAME="EcuNplus7"></A><IMG
+ WIDTH="112" HEIGHT="27" BORDER="0"
+ SRC="img22.png"
+ ALT="\begin{displaymath}
+v_{R}+v+v_{L}=0
+\end{displaymath}"></TD>
+<TD CLASS="eqno" WIDTH=10 ALIGN="RIGHT">
+(<SPAN CLASS="arabic">7</SPAN>)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+donde <SPAN CLASS="MATH"><IMG
+ WIDTH="22" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img23.png"
+ ALT="$v_{R}$"></SPAN> es el voltaje entre las terminales de la resistencia, <SPAN CLASS="MATH"><IMG
+ WIDTH="12" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img6.png"
+ ALT="$v$"></SPAN> es el voltaje entre las terminales del capacitor, y <SPAN CLASS="MATH"><IMG
+ WIDTH="21" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img24.png"
+ ALT="$v_{L}$"></SPAN> es el voltaje entre las terminales del inductor. Utilizaremos el voltaje <SPAN CLASS="MATH"><IMG
+ WIDTH="12" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img6.png"
+ ALT="$v$"></SPAN> (del capacitor) como variable dependiente para nuestra ecuaci&#243;n diferencial de segundo orden. La relaci&#243;n entre el voltaje <SPAN CLASS="MATH"><IMG
+ WIDTH="12" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img6.png"
+ ALT="$v$"></SPAN> y la corriente <SPAN CLASS="MATH"><IMG
+ WIDTH="9" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img21.png"
+ ALT="$i$"></SPAN> es
+<BR>
+<DIV ALIGN="RIGHT" CLASS="mathdisplay">
+
+<!-- MATH
+ \begin{equation}
+i(t)=C\frac{dv}{dt},
+\end{equation}
+ -->
+<A NAME="EcuNplus8"></A>
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><A NAME="EcuNplus8"></A><IMG
+ WIDTH="81" HEIGHT="39" BORDER="0"
+ SRC="img25.png"
+ ALT="\begin{displaymath}
+i(t)=C\frac{dv}{dt},
+\end{displaymath}"></TD>
+<TD CLASS="eqno" WIDTH=10 ALIGN="RIGHT">
+(<SPAN CLASS="arabic">8</SPAN>)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+por lo que por la ley de Ohm, para <SPAN CLASS="MATH"><IMG
+ WIDTH="22" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img23.png"
+ ALT="$v_{R}$"></SPAN> usaremos la expresi&#243;n
+<BR>
+<DIV ALIGN="RIGHT" CLASS="mathdisplay">
+
+<!-- MATH
+ \begin{equation}
+v_{R}(t)=RC\frac{dv}{dt}.
+\end{equation}
+ -->
+<A NAME="EcuNplus9"></A>
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><A NAME="EcuNplus9"></A><IMG
+ WIDTH="106" HEIGHT="39" BORDER="0"
+ SRC="img26.png"
+ ALT="\begin{displaymath}
+v_{R}(t)=RC\frac{dv}{dt}.
+\end{displaymath}"></TD>
+<TD CLASS="eqno" WIDTH=10 ALIGN="RIGHT">
+(<SPAN CLASS="arabic">9</SPAN>)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+Por &#250;ltimo, como la relaci&#243;n entre el voltaje <SPAN CLASS="MATH"><IMG
+ WIDTH="21" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img24.png"
+ ALT="$v_{L}$"></SPAN> en la inductacia y la corriente <SPAN CLASS="MATH"><IMG
+ WIDTH="9" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img21.png"
+ ALT="$i$"></SPAN> est&#225; dada por
+<BR>
+<DIV ALIGN="RIGHT" CLASS="mathdisplay">
+
+<!-- MATH
+ \begin{equation}
+v_{L}(t)=L\frac{di}{dt}.
+\end{equation}
+ -->
+<A NAME="EcuNplus10"></A>
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><A NAME="EcuNplus10"></A><IMG
+ WIDTH="88" HEIGHT="39" BORDER="0"
+ SRC="img27.png"
+ ALT="\begin{displaymath}
+v_{L}(t)=L\frac{di}{dt}.
+\end{displaymath}"></TD>
+<TD CLASS="eqno" WIDTH=10 ALIGN="RIGHT">
+(<SPAN CLASS="arabic">10</SPAN>)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+Sustituyendo (<A HREF="#EcuNplus8">8</A>) en (<A HREF="#EcuNplus10">10</A>),
+<BR>
+<DIV ALIGN="RIGHT" CLASS="mathdisplay">
+
+<!-- MATH
+ \begin{equation}
+v_{L}(t)=LC\frac{d^{2}v}{dt^{2}}.
+\end{equation}
+ -->
+<A NAME="EcuNplus10bis"></A>
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><A NAME="EcuNplus10bis"></A><IMG
+ WIDTH="110" HEIGHT="41" BORDER="0"
+ SRC="img28.png"
+ ALT="\begin{displaymath}
+v_{L}(t)=LC\frac{d^{2}v}{dt^{2}}.
+\end{displaymath}"></TD>
+<TD CLASS="eqno" WIDTH=10 ALIGN="RIGHT">
+(<SPAN CLASS="arabic">11</SPAN>)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+Ahora, sustituyendo (<A HREF="#EcuNplus9">9</A>) y (<A HREF="#EcuNplus10bis">11</A>) en la ecuaci&#243;n (<A HREF="#EcuNplus7">7</A>),
+<BR>
+<DIV ALIGN="RIGHT" CLASS="mathdisplay">
+
+<!-- MATH
+ \begin{equation}
+RC\frac{dv}{dt}+v(t)+LC\frac{d^{2}v}{dt^{2}}=0
+\end{equation}
+ -->
+<A NAME="EcuNplus11"></A>
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><A NAME="EcuNplus11"></A><IMG
+ WIDTH="190" HEIGHT="41" BORDER="0"
+ SRC="img29.png"
+ ALT="\begin{displaymath}
+RC\frac{dv}{dt}+v(t)+LC\frac{d^{2}v}{dt^{2}}=0
+\end{displaymath}"></TD>
+<TD CLASS="eqno" WIDTH=10 ALIGN="RIGHT">
+(<SPAN CLASS="arabic">12</SPAN>)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+Reacomodando los t&#233;rminos de la ecuaci&#243;n (<A HREF="#EcuNplus11">12</A>) obtenemos
+<BR>
+<DIV ALIGN="RIGHT" CLASS="mathdisplay">
+
+<!-- MATH
+ \begin{equation}
+LC\frac{d^{2}v}{dt^{2}}+RC\frac{dv}{dt}+v(t)=0
+\end{equation}
+ -->
+<A NAME="EcuNplus12"></A>
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><A NAME="EcuNplus12"></A><IMG
+ WIDTH="190" HEIGHT="41" BORDER="0"
+ SRC="img30.png"
+ ALT="\begin{displaymath}
+LC\frac{d^{2}v}{dt^{2}}+RC\frac{dv}{dt}+v(t)=0
+\end{displaymath}"></TD>
+<TD CLASS="eqno" WIDTH=10 ALIGN="RIGHT">
+(<SPAN CLASS="arabic">13</SPAN>)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html28"
+  HREF="node3.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html26"
+  HREF="LinealesHomogeneasPrimeroYSegundo.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html20"
+  HREF="node1.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html29"
+  HREF="node3.html">Soluci&#243;n de la ecuaci&#243;n</A>
+<B> Up:</B> <A NAME="tex2html27"
+  HREF="LinealesHomogeneasPrimeroYSegundo.html">LinealesHomogeneasPrimeroYSegundo</A>
+<B> Previous:</B> <A NAME="tex2html21"
+  HREF="node1.html">Ecuaciones diferenciales lineales de</A></DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+
+2020-05-07
+</ADDRESS>
+</BODY>
+</HTML>

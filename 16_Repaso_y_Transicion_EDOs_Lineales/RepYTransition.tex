@@ -1,0 +1,202 @@
+\documentclass[12pt]{article}
+\usepackage[total={18cm,22cm},top=1cm, left=2cm]{geometry}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\def\TresOp#1#2#3{
+\begin{itemize}
+\item[A)] #1
+\item[B)] #2
+\item[C)] #3
+\end{itemize}
+}
+
+\begin{document}
+\section{Solución de problemas de valor inicial}
+Se verificará que la función $y=3e^{2t}+e^{-2t}-3t$ es una solución del problema de 
+valor inicial
+\begin{equation}
+y^{\prime\prime}-4y=12t,\hspace{2cm}y(0)=4,\,\,y^{\prime}(0)=1.
+\label{Ecu0}
+\end{equation}
+
+
+La ecuación diferencial es lineal, los coeficientes y la función $g(t)=12t$ son continuas, 
+y $a_{2}(t)=1\ne 0$ sobre cualquier intervalo $I$ que contenga $t=0$. Se concluye, del teorema 
+4.1.1 (véase REF Zill, pág. 118) que el problema de valor inicial que estamos considerando 
+tiene solución única.
+\begin{enumerate}
+\item La ecuación $y^{\prime\prime}-4y=12t$ es 
+\TresOp{una ecuación diferencial lineal homogénea}
+{una ecuación diferencial lineal no homogénea}
+{una ecuación diferencial no lineal}
+{\tiny R=B}
+\item El problema de encontrar $y(t)$ tal que
+\begin{equation}
+y^{\prime\prime}-4y=12t,\hspace{2cm}y(0)=4,\,\,y^{\prime}(0)=1.
+\label{EcuN15}
+\end{equation}
+es
+\TresOp{un problema de valor inicial}
+{un problema de solución única}
+{un problema de valores en la frontera}
+{\tiny R=A}
+\item Para resolver el problema de encontrar $y(t)$ tal que
+\begin{equation}
+y^{\prime\prime}-4y=12t,\hspace{2cm}y(0)=4,\,\,y^{\prime}(0)=1.
+\end{equation}
+primero se debe resolver
+\TresOp{la ecuación diferencial reducible a exacta}
+{la ecuación diferencial lineal homogénea asociada}
+{la ecuación diferencial dual}
+{\tiny R=B}
+\newpage
+\item La ecuación diferencial $y^{\prime\prime}-4y=0$ tiene asociada la ecuación característica
+\TresOp{$s^{2}-4s=0$}
+{$s^{2}+4=0$}
+{$s^{2}-4=0$}
+{\tiny R=C}
+\item Las raíces de la ecuación característica asociada con $y^{\prime\prime}-4y=0$ son
+\TresOp{$s_{1}=4,\,s_{2}=-4$}
+{$s_{1}=2,\,\,s_{2}=2$}
+{$s_{1}=2,\,s_{2}=-2$}
+{\tiny R=C}
+\item La solución de la ecuación $y^{\prime\prime}-4y=0$ es de la forma
+\TresOp{$y_{h}(t)=c_{1}e^{2t}+c_{2}te^{2t}$}
+{$y_{h}(t)=c_{1}e^{2t}+c_{2}e^{-2t}$}
+{$y_{h}(t)=c_{1}e^{2t}+c_{2}te^{-2t}$}
+{\tiny R=B}
+\item Si definimos $y_{p}(t)=c_{3}t$ (donde $c_{3}$ es una constante), y sustituimos $y=y_{p}(t)$ 
+en $y^{\prime\prime}-4y=12t$ se encuentra que la constante $c_{3}$  es igual a
+\TresOp{12}
+{-4}
+{-3}
+{\tiny R=C}
+\item La solución del problema de encontrar $y(t)$ tal que $y^{\prime\prime}-4y=12t$ sujeto a 
+$y(0)=4,\,\,y^{\prime}(0)=1$ es de la forma
+\TresOp{$y(t)=c_{1}e^{2t}+c_{2}te^{2t}+c_{3}t$ (donde el valor de $c_{3}$ ya se ha calculado)}
+{$y(t)=c_{1}e^{2t}+c_{2}e^{-2t}+c_{3}t$ (donde el valor de $c_{3}$ ya se ha calculado)}
+{$y(t)=c_{1}e^{2t}+c_{2}e^{2t}+c_{3}t$ (donde el valor de $c_{3}$ ya se ha calculado)}
+{\tiny R=B}
+\newpage
+\item Sustituyendo $t=0$ y la condición inicial $y(0)=4$ en su respuesta al reactivo anterior 
+conduce a la ecuación
+\TresOp{$c_{1}+c_{2}=4$}
+{$c_{1}+2c_{2}=4$}
+{$4c_{1}+c_{2}=4$}
+{\tiny R=A}
+\item ?`Cuál es el sistema de ecuaciones que se debe resolver para encontrar $c_{1}$ y $c_{2}$ 
+de la solución al problema planteado? ($y^{\prime\prime}-4y=12t$ sujeto a $y(0)=4$, 
+$y^{\prime}(0)=1$)
+\TresOp{$c_{1}+c_{2}=4$, $2c_{1}-2c_{2}=4$}
+{$c_{1}+c_{2}=4$, $2c_{1}+2c_{2}=4$}
+{$c_{1}+c_{2}=4$, $2c_{1}-2c_{2}=0$}
+{\tiny R=A}
+\item La solución al problema de encontrar $y(t)$ tal que 
+$y^{\prime\prime}-4y=12t$ sujeto a $y(0)=4$, $y^{\prime}(0)=1$ es
+\TresOp{$y(t)=3e^{2t}+te^{2t}-3t$}
+{$y(t)=3e^{2t}+e^{-2t}-3t$}
+{$y(t)=e^{2t}+3e^{-2t}-3t$}
+{\tiny R=B}
+\end{enumerate}
+\subsection{Obtención de la solución a un problema de valor inicial}
+Para resolver el problema de valor inicial: encontrar $y(t)$ tal que
+\begin{equation}
+y^{\prime\prime}-4y=12t,\hspace{2cm}y(0)=4,\,\,y^{\prime}(0)=1.
+\end{equation}
+primero se encuentra la solución general de la ecuación diferencial lineal homogénea
+\begin{equation}
+y^{\prime\prime}-4y=0
+\label{Ecu2}
+\end{equation}
+Sustituyendo, $y=k_{0}e^{st}$ en (\ref{Ecu2}), obtenemos la ecuación característica
+\begin{equation}
+s^{2}-4=0
+\end{equation}
+de lo cual, se obtienen las raíces $s_{1}=2,\,s_{2}=-2$. Entonces, sabemos que la solución 
+general de (\ref{Ecu2}) es de la forma
+\begin{equation}
+y_{h}(t)=c_{1}e^{2t}+c_{2}e^{-2t}
+\label{Ecu3}
+\end{equation}
+Como sabemos que para cualesquiera dos constantes reales $c_{1}$ y $c_{2}$ (Ecu3) es solución 
+de la ecuación diferencial lineal homogénea (\ref{Ecu2}), esto es,
+\begin{equation}
+y_{h}^{\prime\prime}-4y_{h}=0
+\label{Ecu4}
+\end{equation}
+la solución del problema de valor inicial (\ref{Ecu0}), debe ser de la forma
+\begin{equation}
+y(t)=y_{h}(t)+y_{p}(t)
+\label{Ecu5}
+\end{equation}
+Sustituyendo (\ref{Ecu5}) en (\ref{Ecu0}) se tiene que
+\begin{equation}
+y_{h}^{\prime\prime}-4y_{h}+y_{p}^{\prime\prime}-4y_{p}=12t
+\label{Ecu6}
+\end{equation}
+Usando el hecho indicado por la ecuación (\ref{Ecu4}), de (\ref{Ecu6}) encontramos que 
+\begin{equation}
+y_{p}^{\prime\prime}-4y_{p}=12t
+\label{Ecu7}
+\end{equation}
+Una forma sistemática de encontrar $y_{p}(t)$, tendrá que esperar hasta que revisemos 
+el tema de sistemas de ecuaciones y el método de variación de parámetros. Por ahora, sólo 
+haremos una deducción medio ingeniosa, medio ``mágica'' de la solución para (\ref{Ecu7}). 
+Primero notamos que si $y_{p}$ es una constante que multiplica a $t$, la segunda derivada de 
+$y_{p}$ es igual a cero. De tal manera que si $y_{p}=c_{3}t$, (donde $c_{3}$ es una constante), $y_{p}^{\prime\prime}=0$; y se 
+puede despejar $y_{p}$ de (\ref{Ecu7}):
+\begin{eqnarray*}
+y_{p}^{\prime\prime}-4y_{p}&=&12t\\
+0-4y_{p}(t)&=&12t\\
+-4y_{p}(t)&=&12t\\
+y_{p}(t)&=&-3t
+\label{Ecu8}
+\end{eqnarray*}
+De lo cual concluimos que
+\begin{equation}
+y_{p}(t)=-3t
+\label{Ecu9}
+\end{equation}
+Sustituyendo (\ref{Ecu3}) y (\ref{Ecu9}) en (\ref{Ecu5}) tenemos
+\begin{equation}
+y(t)=c_{1}e^{2t}+c_{2}e^{-2t}-3t
+\label{Ecu10}
+\end{equation}
+Finalmente para encontrar las constantes $c_{1}$ y $c_{2}$ se utiliza el siguiente sistema de 
+ecuaciones
+\begin{eqnarray}
+\left.c_{1}e^{2t}+c_{2}e^{-2t}-3t\right|_{t=0}&=&y(0)\label{Ecu11}\\
+\left.2c_{1}e^{2t}-2c_{2}e^{-2t}-3\right|_{t=0}&=&y^{\prime}(0)\label{Ecu12}
+\end{eqnarray}
+Con los valores iniciales $y(0)=4$, $y^{\prime}(0)=1$, el sistema (\ref{Ecu11})-(\ref{Ecu12}) se 
+convierte en
+\begin{eqnarray}
+c_{1}+c_{2}&=&4\label{Ecu13}\\
+2c_{1}-2c_{2}-3&=&1\label{Ecu14}
+\end{eqnarray}
+es decir,
+\begin{eqnarray}
+c_{1}+c_{2}&=&4\label{Ecu13}\\
+2c_{1}-2c_{2}&=&4\label{Ecu14}
+\end{eqnarray}
+Resolviendo este sistema de ecuaciones encontramos que $c_{1}=3$ y $c_{2}=1$. Con lo que concluimos 
+que la solución al problema de valor inicial que estamos resolviendo es
+\begin{equation}
+y(t)=3e^{2t}+e^{-2t}-3t
+\end{equation}
+Dicho de forma más elegante, la solución al problema de valor inicial: encontrar $y(t)$ tal que
+\begin{equation}
+y^{\prime\prime}-4y=12t,\hspace{2cm}y(0)=4,\,\,y^{\prime}(0)=1.
+\label{Ecu15}
+\end{equation}
+es 
+\begin{equation}
+y(t)=3e^{2t}+e^{-2t}-3t
+\label{Ecu16}
+\end{equation}
+
+
+\ \\
+REF. Dennis G. Zill, Michael Cullen, Differential Equations with Boundary Value Problems
+\end{document}
+

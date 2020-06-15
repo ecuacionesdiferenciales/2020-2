@@ -1,0 +1,328 @@
+%El método de variación de parámetros
+\documentclass[12pt]{article}
+\usepackage[total={18cm,22cm},top=1cm, left=2cm]{geometry}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\def\TresOp#1#2#3{
+\begin{itemize}
+\item[A)] #1
+\item[B)] #2
+\item[C)] #3
+\end{itemize}
+}
+\def\SOH#1{%Second order Homogeneous
+#1^{\prime\prime}+p(t)#1^{\prime}+q(t)#1
+}
+\def\DotPro#1#2#3#4{
+#1#2+#3#4
+}
+\def\LasUs{
+u_{1}(t)\mbox{\ y\ }u_{2}(t) 
+}
+\def\LasYs{
+y_{1}(t)\mbox{\ y\ }y_{2}(t)
+}
+\def\L#1{
+#1^{\prime\prime}+#1
+}
+%REF: Martin Braun, Differential Equations and their Applications, Fourth Edition, page 153,
+% Editorial Springer, 1993.
+\begin{document}
+\section{El método de variación de parámetros}
+A continuación describimos un método muy general para encontrar una solución particular $\psi(t)$ 
+de la ecuación no homogénea
+\begin{equation}
+L[y]=\frac{d^{2}y}{dt^{2}}+p(t)\frac{dy}{dt}+q(t)y=g(t),
+\label{Ecu01}
+\end{equation}
+una vez que las soluciones de la ecuación homogénea
+\begin{equation}
+L[y]=\frac{d^{2}y}{dt^{2}}+p(t)\frac{dy}{dt}+q(t)y=0
+\label{Ecu02}
+\end{equation}
+son conocidas. El principio básico de este método es usar nuestro conocimiento de las soluciones 
+de la ecuación homogénea para ayudarnos a encontrar una solución de la ecuación no homogénea.
+
+Sean $y_{1}(t)$ y $y_{2}(t)$ dos soluciones linealmente independientes de la ecuación homogénea 
+(\ref{Ecu02}). Trataremos de encontrar una solución particular $\psi(t)$ de la ecuación no 
+homogénea (\ref{Ecu01}) de la forma
+\begin{equation}
+\psi(t)=u_{1}(t)y_{1}(t)+u_{2}(t)y_{2}(t);
+\label{Ecu03}
+\end{equation}
+esto es, trataremos de encontrar las funciones $u_{1}(t)$ y $u_{2}(t)$ tal que la combinación 
+lineal $u_{1}(t)y_{1}(t)+u_{2}(t)y_{2}(t)$ es una solución de (\ref{Ecu01}). En este método, se 
+buscará encontrar $u_{1}(t)$ y $u_{2}(t)$ como las soluciones de dos ecuaciones de primer orden 
+simples. Observemos que la ecuación diferencial (\ref{Ecu01}) impone solamente una condición 
+sobre las dos funciones desconocidas $u_{1}(t)$ y $u_{2}(t)$. Por lo tanto, tenemos uan cierta 
+``libertad'' en la elección de $u_{1}(t)$ y $u_{2}(t)$. Nuestro objetivo es imponer una condición 
+adicional sobre $u_{1}(t)$ y $u_{2}(t)$ la cual hará la expresión $L[u_{1}y_{1}+u_{2}y_{2}]$ tan 
+simple como sea posible. Calculando
+\begin{eqnarray}
+\frac{d}{dt}\psi(t)&=&\frac{d}{dt}[u_{1}y_{1}+u_{2}y_{2}]\nonumber\\
+&=&[u_{1}y_{1}^{\prime}+u_{2}y_{2}^{\prime}]+[u_{1}^{\prime}y_{1}+u_{2}^{\prime}y_{2}]\nonumber
+\end{eqnarray}
+De esta expresión, se puede notar que si ponemos como condición que
+\begin{equation}
+y_{1}(t)u_{1}^{\prime}(t)+y_{2}(t)u_{2}^{\prime}(t)=0,
+\label{Ecu04}
+\end{equation}
+entonces, $d^{2}\psi/dt^{2}$ y consecuentemente $L[\psi]$, no contendrá derivadas de segundo orden 
+de $u_{1}$ y $u_{2}$. Esto sugiere que, imponiendo la condición (\ref{Ecu04}) sobre las funciones 
+$u_{1}(t)$ y $u_{2}(t)$, en este caso, entonces,
+\begin{eqnarray}
+L[\psi]&=&[u_{1}y_{1}^{\prime}+u_{2}y_{2}^{\prime}]^{\prime}+p(t)[u_{1}y_{1}^{\prime}+u_{2}y_{2}^{\prime}]+
+q(t)[u_{1}y_{1}+u_{2}y_{2}]\nonumber\\
+&=&u_{1}^{\prime}y_{1}^{\prime}+u_{2}^{\prime}y_{2}^{\prime}+
+u_{1}[\SOH{y_{1}}]+u_{2}[\SOH{y_{2}}]\nonumber\\
+&=&u_{1}^{\prime}y_{1}^{\prime}+u_{2}^{\prime}y_{2}^{\prime}\nonumber
+\end{eqnarray}
+Dado que $y_{1}(t)$ y $y_{2}(t)$ son soluciones de la ecuación homogénea $L[y]=0$. Consecuentemente, 
+$\psi=\DotPro{u_{1}}{y_{1}}{u_{2}}{y_{2}}$ es una solución de la ecuación no homogenea (\ref{Ecu01}) 
+si $\LasUs$ satisfacen las dos ecuaciones
+\begin{eqnarray}
+\DotPro{y_{1}(t)}{u_{1}^{\prime}(t)}{y_{2}(t)}{u_{2}^{\prime}(t)}&=&0\label{Ecu06}\\
+\DotPro{y_{1}^{\prime}(t)}{u_{1}^{\prime}(t)}{y_{2}^{\prime}(t)}{u_{2}^{\prime}(t)}&=&g(t)\label{Ecu07}
+\end{eqnarray}
+Aquí podemos notar que las ecuaciones (\ref{Ecu06}) y (\ref{Ecu07}) pueden rescribirse como
+\begin{equation}\left[
+\begin{array}{cc}
+y_{1}(t) & y_{2}(t)\\
+y_{1}^{\prime}(t) & y_{2}^{\prime}(t)
+\end{array}\right]\left[\begin{array}{c}
+u_{1}^{\prime}(t)\\
+u_{2}^{\prime}(t)
+\end{array}\right]=\left[\begin{array}{c}
+0\\
+g(t)
+\end{array}\right]
+\label{Ecu07}
+\end{equation}
+y que el determinante de este sistema es el Wronskiano de las soluciones $y_{1}(t)$ y $y_{2}(t)$ de 
+$L[y]=0$. De (\ref{Ecu07}), usando el Wronskiano de $\LasYs$, las soluciones para $u_{1}^{\prime}$ y 
+$u_{2}^{\prime}$ se pueden calcular como
+\begin{equation}
+u_{1}^{\prime}(t)=\frac{1}{W(y_{1},y_{2})}\left|\begin{array}{cc}
+0    & y_{2}(t)\\
+g(t) & y_{2}^{\prime}(t)
+\end{array}\right|=-\frac{g(t)y_{2}(t)}{W(y_{1},y_{2})}
+\label{Ecu08}
+\end{equation}
+y
+\begin{equation}
+u_{1}^{\prime}(t)=\frac{1}{W(y_{1},y_{2})}\left|\begin{array}{cc}
+y_{1}(t)         & 0\\
+y_{2}^{\prime}(t)& g(t) 
+\end{array}\right|=\frac{g(t)y_{1}(t)}{W(y_{1},y_{2})}.
+\label{Ecu09}
+\end{equation}
+Finalmente, obtenemos $u_{1}(t)$ y $u_{2}(t)$ integrando los lados derechos de (\ref{Ecu08}) y 
+(\ref{Ecu09}).
+\subsection{Comentario}
+La solución general de la ecuación homogénea (\ref{Ecu02}) es
+\begin{equation}
+y(t)=\DotPro{c_{1}}{y_{1}(t)}{c_{2}}{y_{2}(t)}.
+\label{Ecu10}
+\end{equation}
+Permitiendo que $c_{1}$ y $c_{2}$ varíen con el tiempo, obtenemos una solución de la ecuación 
+no homogénea. Por esa razón, este método es conocido como el {\bf método de variación de parámetros}. 
+\section{Ejemplo}
+\begin{itemize}
+\item[(a)] Encuentre una solución particular $\psi(t)$ de la ecuación
+\begin{equation}
+\frac{d^{2}y}{dt^{2}}+y=\tan t
+\label{Ecu11}
+\end{equation}
+sobre el intervalo $-\pi/2<t<\pi/2$.
+\item[(b)] Encuentre la solución $y(t)$ de (\ref{Ecu11}) la cual satisface las condiciones iniciales 
+$y(0)=1$, $y^{\prime}(0)=1$.
+\end{itemize}
+{\it Solución.}\\
+\begin{itemize}
+\item[(a)] Las funciones $y_{1}(t)=\cos t$ y $y_{2}(t)=\sin t$ son dos soluciones linealmente 
+independientes de la ecuación homogénea $\L{y}=0$ con
+\begin{equation}
+W(y_{1},y_{2})=y_{1}y_{2}^{\prime}-y_{1}^{\prime}y_{2}=(\cos t)\sin t-(-\sin t)\cos t=1
+\label{Ecu12}
+\end{equation}
+Entonces, de (\ref{Ecu08}),
+\begin{equation}
+u_{1}^{\prime}(t)=-\tan t\sin t
+\label{Ecu13}
+\end{equation}
+y de (\ref{Ecu09}),
+\begin{equation}
+u_{2}^{\prime}(t)=\tan t\cos t
+\label{Ecu14}
+\end{equation}
+Integrando la ecuación (\ref{Ecu13})
+\begin{eqnarray}
+u_{1}(t)&=&-\int\tan t\sin t\,dt=-\int\frac{\sin^{2}t}{\cos t}dt\nonumber\\
+&=&\int\frac{\cos^{2}t-1}{\cos t}dt=\sin t-\ln\left|\sec t+\tan t\right|\nonumber\\
+&=&\sin t-\ln(\sec t+\tan t),\,\,\,\,-\frac{\pi}{2}<t<\frac{\pi}{2}
+\label{Ecu15}
+\end{eqnarray}
+mientras que integrando (\ref{Ecu14})
+\begin{equation}
+u_{2}(t)=\int\tan t\cos t\,dt=\int\sin t\,dt=-\cos t.
+\label{Ecu16}
+\end{equation}
+Consecuentemente,
+\begin{eqnarray}
+\psi(t)&=&\cos t[\sin t-\ln(\sec t+\tan t)]+\sin t(-\cos t)\nonumber\\
+&=&(-\cos t)\ln(\sec t+\tan t)
+\label{Ecu17}
+\end{eqnarray}
+es una solución particular de (\ref{Ecu11}) sobre el intervalo $-\pi/2<t<\pi/2$.
+\item[(b)] A la luz de la información anterior, la solución general de (\ref{Ecu01}) está dada por
+\begin{equation}
+y(t)=c_{1}\cos t+c_{2}\sin t-\cos t\ln(\sec t+\tan t)
+\label{Ecu18}
+\end{equation}
+para alguna elección de las constantes $c_{1}$ y $c_{2}$. Las constantes $c_{1}$ y $c_{2}$ se determinan 
+usando las condiciones iniciales
+\begin{equation}
+c_{1}=y(0)=1,\mbox{\ y\ }c_{2}-1=y^{\prime}(0)=1.
+\label{Ecu19}
+\end{equation}
+Por lo tanto, $c_{1}=1$, $c_{2}=2$ y
+\begin{equation}
+y(t)=\cos t+2\sin t-\cos t\ln(\sec t+\tan t),\,\,\,\,-\frac{\pi}{2}<t<\frac{\pi}{2}.
+\label{Ecu20}
+\end{equation}
+En resumen, (\ref{Ecu20}) es la solución del problema de valor inicial (\ref{Ecu01}) con condiciones 
+iniciales $y(0)=1$, $y^{\prime}(0)=1$; obtenida por el método de variación de parámetros.
+\end{itemize}
+
+\newpage
+\section{Reactivos}
+\begin{enumerate}
+\item Sea $L[y]=\SOH{y}$. Entonces $L[y]=\SOH{y}=g(t)$ es
+\TresOp{una ecuación diferencial lineal no homogénea}
+{una ecuación diferencial lineal homogénea}
+{una ecuación diferencial no lineal}
+{\tiny R=A}
+\item Sea $L[y]=\SOH{y}$, donde $p(t)$ y $q(t)$ son funciones continuas. Si se propone 
+$\psi(t)=u_{1}(t)y_{1}(t)+u_{2}(t)y_{2}(t)$, y suponemos que $y_{1}(t)u_{1}^{\prime}(t)+y_{2}(t)u_{2}^{\prime}(t)=0$, ?`a qué es igual $L[\psi]$?
+\TresOp{$\SOH{y_{1}}$}
+{$\SOH{y_{2}}$}
+{$u_{1}^{\prime}y_{1}^{\prime}+u_{2}^{\prime}y_{2}^{\prime}$}
+{\tiny R=C}
+\item Considerando el sistema de ecuaciones
+$$
+\left[
+\begin{array}{cc}
+y_{1}(t) & y_{2}(t)\\
+y_{1}^{\prime}(t) & y_{2}^{\prime}(t)
+\end{array}\right]\left[\begin{array}{c}
+u_{1}^{\prime}(t)\\
+u_{2}^{\prime}(t)
+\end{array}\right]=\left[\begin{array}{c}
+0\\
+g(t)
+\end{array}\right]
+$$
+?`A qué es igual el determinante del sistema?
+\TresOp{El Wronskiano de $\LasUs$}
+{El Wronskiano de $y(t)$ y $g(t)$}
+{El Wronskiano de $\LasYs$}
+{\tiny R=C}
+\item Considerando el sistema de ecuaciones
+$$
+\left[
+\begin{array}{cc}
+y_{1}(t) & y_{2}(t)\\
+y_{1}^{\prime}(t) & y_{2}^{\prime}(t)
+\end{array}\right]\left[\begin{array}{c}
+u_{1}^{\prime}(t)\\
+u_{2}^{\prime}(t)
+\end{array}\right]=\left[\begin{array}{c}
+0\\
+g(t)
+\end{array}\right]
+$$
+?`Cuál es la solución para $u_{1}^{\prime}(t)$?
+\TresOp{$-\frac{g(t)}{W(y_{1},y_{2})}$}
+{$-\frac{y_{2}(t)}{W(y_{1},y_{2})}$}
+{$-\frac{g(t)y_{2}(t)}{W(y_{1},y_{2})}$}
+{\tiny R=C}
+\newpage
+\item Considerando el sistema de ecuaciones
+$$
+\left[
+\begin{array}{cc}
+y_{1}(t) & y_{2}(t)\\
+y_{1}^{\prime}(t) & y_{2}^{\prime}(t)
+\end{array}\right]\left[\begin{array}{c}
+u_{1}^{\prime}(t)\\
+u_{2}^{\prime}(t)
+\end{array}\right]=\left[\begin{array}{c}
+0\\
+g(t)
+\end{array}\right]
+$$
+?`Cuál es la solución para $u_{2}^{\prime}(t)$?
+\TresOp{$-\frac{g(t)}{W(y_{1},y_{2})}$}
+{$\frac{g(t)y_{1}(t)}{W(y_{1},y_{2})}$}
+{$-\frac{g(t)y_{2}(t)}{W(y_{1},y_{2})}$}
+{\tiny R=B}
+\item Si definimos $L[y]=y^{\prime\prime}+y$, la ecuación $y^{\prime\prime}+y=\tan t$ es 
+equivalente a
+\TresOp{$L[y]=\tan t$}
+{$L[y]=0$}
+{$L[y]=t$}
+{\tiny R=A}
+\item ?`Cuál es la ecuación homogénea asociada a la ecuación 
+$y^{\prime\prime}+y=\tan t$
+\TresOp{$y^{\prime\prime}+y=\tan t$}
+{$y^{\prime\prime}+y=t$}
+{$y^{\prime\prime}+y=0$}
+{\tiny R=C}
+\item Definiendo $L[y]=y^{\prime\prime}+y$, ?`cuáles son las raíces de la ecuación característica 
+correspondiente a la ecuación $L[y]=0$?
+\TresOp{$1+j$, $1-j$}
+{$1,-1$}
+{$j$, $-j$}
+{\tiny R=C}
+\newpage
+\item La solución de la ecuación $y^{\prime\prime}+y=0$ es de la forma
+\TresOp{$c_{1}\cos t+c_{2}\sin t$}
+{$e^{t}(c_{1}\cos t+c_{2}\sin t)$}
+{$c_{1}e^{t}+c_{2}e^{-t}$}
+{\tiny R=A}
+\item ?`Cuáles son dos soluciones linealmente independientes de $\L{y}=0$?
+\TresOp{$e^{t}$ y $e^{-t}$}
+{$\cos t$ y $\sin t$}
+{$e^{t}\cos t$ y $e^{t}\sin t$}
+{\tiny R=B}
+\item Usando el método de variación de parámetros para resolver $\L{y}=\tan t$, ?`a qué es igual 
+$u_{1}^{\prime}(t)$?
+\TresOp{$\tan t\sin t$}
+{$-\tan t\sin t$}
+{$-\tan t\cos t$}
+{\tiny R=B}
+\item Usando el método de variación de parámetros para resolver $\L{y}=\tan t$, ?`a qué es igual 
+$u_{2}^{\prime}(t)$?
+\TresOp{$\tan t\cos t$}
+{$-\tan t\cos t$}
+{$-\tan t\sin t$}
+{\tiny R=A}
+\item Siguiendo el método de variación de parámetros, ?`Cuál es la función $u_{1}(t)$?
+\TresOp{$\sin t-\ln(\sec t+\tan t),\,\,\,\,-\frac{\pi}{2}<t<\frac{\pi}{2}$}
+{$\sin t -\cos t,\,\,\,\,-\frac{\pi}{2}<t<\frac{\pi}{2}$}
+{$\ln(\sec t+\tan t),\,\,\,\,-\frac{\pi}{2}<t<\frac{\pi}{2}$}
+{\tiny R=A}
+\newpage
+\item Siguiendo el método de variación de parámetros, ?`Cuál es la función $u_{2}(t)$?
+\TresOp{$\sin t\cos t$}
+{$\cos t$}
+{$-\cos t$}
+{\tiny R=C}
+\item Utilizando las dos respuestas anteriores, obtenidas por el método de variación de parámetros; 
+?`Cuál es la solución particular de $\L{y}=\tan t$?
+\TresOp{$(-\cos t)\ln(\sin t+\tan t),\,\,\,-\frac{\pi}{2}<t<\frac{\pi}{2}$}
+{$(-\cos t)\ln(\sec t+\tan t),\,\,\,-\frac{\pi}{2}<t<\frac{\pi}{2}$}
+{$(-\sin t)\ln(\sec t+\tan t),\,\,\,-\frac{\pi}{2}<t<\frac{\pi}{2}$}
+{\tiny R=B}
+\end{enumerate}
+\end{document}

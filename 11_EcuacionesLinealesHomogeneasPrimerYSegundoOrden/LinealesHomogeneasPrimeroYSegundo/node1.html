@@ -1,0 +1,272 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Ecuaciones diferenciales lineales de primer orden homog&#233;neas</TITLE>
+<META NAME="description" CONTENT="Ecuaciones diferenciales lineales de primer orden homog&#233;neas">
+<META NAME="keywords" CONTENT="LinealesHomogeneasPrimeroYSegundo">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="LinealesHomogeneasPrimeroYSegundo.css">
+
+<LINK REL="next" HREF="node2.html">
+<LINK REL="previous" HREF="LinealesHomogeneasPrimeroYSegundo.html">
+<LINK REL="up" HREF="LinealesHomogeneasPrimeroYSegundo.html">
+<LINK REL="next" HREF="node2.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html18"
+  HREF="node2.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html16"
+  HREF="LinealesHomogeneasPrimeroYSegundo.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html10"
+  HREF="LinealesHomogeneasPrimeroYSegundo.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html19"
+  HREF="node2.html">Ecuaci&#243;n diferencial lineal homog&#233;nea</A>
+<B> Up:</B> <A NAME="tex2html17"
+  HREF="LinealesHomogeneasPrimeroYSegundo.html">LinealesHomogeneasPrimeroYSegundo</A>
+<B> Previous:</B> <A NAME="tex2html11"
+  HREF="LinealesHomogeneasPrimeroYSegundo.html">LinealesHomogeneasPrimeroYSegundo</A>
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00010000000000000000">
+Ecuaciones diferenciales lineales de primer orden homog&#233;neas</A>
+</H1>
+Consideremos la ecuaci&#243;n diferencial lineal homog&#233;nea que describe el comportamiento 
+del circuito el&#233;ctrico de la figura
+
+<DIV ALIGN="CENTER"><A NAME="12"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 1:</STRONG>
+
+Circuito RC sin fuente
+</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+<!--
+[width=6cm]./images/02_Circuito_RC.jpg
+-->
+<IMG src=./images/02_Circuito_RC.jpg />
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+Utilizando la ley de corrientes de Kirchhoff  se obtiene la ecuaci&#243;n diferencial
+<BR>
+<DIV ALIGN="RIGHT" CLASS="mathdisplay">
+
+<!-- MATH
+ \begin{equation}
+C\frac{dv}{dt}+\frac{v}{R}=0
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="98" HEIGHT="39" BORDER="0"
+ SRC="img1.png"
+ ALT="\begin{displaymath}
+C\frac{dv}{dt}+\frac{v}{R}=0
+\end{displaymath}"></TD>
+<TD CLASS="eqno" WIDTH=10 ALIGN="RIGHT">
+(<SPAN CLASS="arabic">1</SPAN>)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+Dividiendo entre <SPAN CLASS="MATH"><IMG
+ WIDTH="16" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$C$"></SPAN> obtenemos
+<BR>
+<DIV ALIGN="RIGHT" CLASS="mathdisplay">
+
+<!-- MATH
+ \begin{equation}
+\frac{dv}{dt}+\frac{v}{RC}=0
+\end{equation}
+ -->
+<A NAME="EcuN"></A>
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><A NAME="EcuN"></A><IMG
+ WIDTH="97" HEIGHT="39" BORDER="0"
+ SRC="img3.png"
+ ALT="\begin{displaymath}
+\frac{dv}{dt}+\frac{v}{RC}=0
+\end{displaymath}"></TD>
+<TD CLASS="eqno" WIDTH=10 ALIGN="RIGHT">
+(<SPAN CLASS="arabic">2</SPAN>)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+Para resolver la ecuaci&#243;n utilizaremos un m&#233;todo que consiste en sustituir la expresi&#243;n <!-- MATH
+ $k_{0}e^{\lambda t}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="40" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img4.png"
+ ALT="$k_{0}e^{\lambda t}$"></SPAN> (donde <SPAN CLASS="MATH"><IMG
+ WIDTH="48" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img5.png"
+ ALT="$k_{0}\neq 0$"></SPAN> es una constante real) en todos los lugares de la ecuaci&#243;n (<A HREF="#EcuN">2</A>) en donde aparece <SPAN CLASS="MATH"><IMG
+ WIDTH="12" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img6.png"
+ ALT="$v$"></SPAN>. Haciendo esto, se tiene
+<BR>
+<DIV ALIGN="RIGHT" CLASS="mathdisplay">
+
+<!-- MATH
+ \begin{equation}
+\frac{d(k_{0}e^{\lambda t})}{dt}+\frac{k_{0}e^{\lambda t}}{RC}=0
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="147" HEIGHT="42" BORDER="0"
+ SRC="img7.png"
+ ALT="\begin{displaymath}
+\frac{d(k_{0}e^{\lambda t})}{dt}+\frac{k_{0}e^{\lambda t}}{RC}=0
+\end{displaymath}"></TD>
+<TD CLASS="eqno" WIDTH=10 ALIGN="RIGHT">
+(<SPAN CLASS="arabic">3</SPAN>)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+derivando y factorizando
+<BR>
+<DIV ALIGN="CENTER"><A NAME="EcuNplus3"></A>
+<!-- MATH
+ \begin{eqnarray}
+\lambda k_{0}e^{\lambda t}+\frac{k_{0}}{RC}e^{\lambda t}&=&0\\
+ (\lambda + \frac{1}{RC})k_{0}e^{\lambda t}&=&0
+\end{eqnarray}
+ -->
+<TABLE CELLPADDING="0" ALIGN="CENTER" WIDTH="100%">
+<TR VALIGN="MIDDLE"><TD NOWRAP WIDTH="50%" ALIGN="RIGHT"><IMG
+ WIDTH="118" HEIGHT="51" ALIGN="MIDDLE" BORDER="0"
+ SRC="img8.png"
+ ALT="$\displaystyle \lambda k_{0}e^{\lambda t}+\frac{k_{0}}{RC}e^{\lambda t}$"></TD>
+<TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="16" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img9.png"
+ ALT="$\textstyle =$"></TD>
+<TD ALIGN="LEFT" WIDTH="50%" NOWRAP><IMG
+ WIDTH="12" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img10.png"
+ ALT="$\displaystyle 0$"></TD>
+<TD CLASS="eqno" WIDTH=10 ALIGN="RIGHT">
+(<SPAN CLASS="arabic">4</SPAN>)</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP WIDTH="50%" ALIGN="RIGHT"><IMG
+ WIDTH="109" HEIGHT="52" ALIGN="MIDDLE" BORDER="0"
+ SRC="img11.png"
+ ALT="$\displaystyle (\lambda + \frac{1}{RC})k_{0}e^{\lambda t}$"></TD>
+<TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="16" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img9.png"
+ ALT="$\textstyle =$"></TD>
+<TD ALIGN="LEFT" WIDTH="50%" NOWRAP><IMG
+ WIDTH="12" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img10.png"
+ ALT="$\displaystyle 0$"></TD>
+<TD CLASS="eqno" WIDTH=10 ALIGN="RIGHT">
+(<SPAN CLASS="arabic">5</SPAN>)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+dado que para todo <SPAN CLASS="MATH"><IMG
+ WIDTH="41" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img12.png"
+ ALT="$t\in R$"></SPAN>, <!-- MATH
+ $e^{\lambda t}\neq 0$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="53" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img13.png"
+ ALT="$e^{\lambda t}\neq 0$"></SPAN> (de hecho, si <SPAN CLASS="MATH"><IMG
+ WIDTH="45" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img14.png"
+ ALT="$\lambda\in R$"></SPAN>, <!-- MATH
+ $e^{\lambda t}>0$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="53" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img15.png"
+ ALT="$e^{\lambda t}&gt;0$"></SPAN> <!-- MATH
+ $\forall\,t\in R$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="53" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img16.png"
+ ALT="$\forall\,t\in R$"></SPAN>). De (<A HREF="#EcuNplus3">5</A>), concluimos que
+<BR>
+<DIV ALIGN="RIGHT" CLASS="mathdisplay">
+
+<!-- MATH
+ \begin{equation}
+\lambda + \frac{1}{RC}=0
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="86" HEIGHT="39" BORDER="0"
+ SRC="img17.png"
+ ALT="\begin{displaymath}
+\lambda + \frac{1}{RC}=0
+\end{displaymath}"></TD>
+<TD CLASS="eqno" WIDTH=10 ALIGN="RIGHT">
+(<SPAN CLASS="arabic">6</SPAN>)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+de donde concluimos que <!-- MATH
+ $v(t)=k_{0}e^{-\frac{t}{RC}}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="105" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img18.png"
+ ALT="$v(t)=k_{0}e^{-\frac{t}{RC}}$"></SPAN> es la soluci&#243;n general de la ecuaci&#243;n diferencial (<A HREF="#EcuN">2</A>), (donde <SPAN CLASS="MATH"><IMG
+ WIDTH="48" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img5.png"
+ ALT="$k_{0}\neq 0$"></SPAN> es una constante real).
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html18"
+  HREF="node2.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html16"
+  HREF="LinealesHomogeneasPrimeroYSegundo.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html10"
+  HREF="LinealesHomogeneasPrimeroYSegundo.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html19"
+  HREF="node2.html">Ecuaci&#243;n diferencial lineal homog&#233;nea</A>
+<B> Up:</B> <A NAME="tex2html17"
+  HREF="LinealesHomogeneasPrimeroYSegundo.html">LinealesHomogeneasPrimeroYSegundo</A>
+<B> Previous:</B> <A NAME="tex2html11"
+  HREF="LinealesHomogeneasPrimeroYSegundo.html">LinealesHomogeneasPrimeroYSegundo</A></DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+
+2020-05-07
+</ADDRESS>
+</BODY>
+</HTML>

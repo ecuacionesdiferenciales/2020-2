@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This is a Reload version 2.5.6 SCORM 2004 Content Package document-->
+<!--Spawned from the Reload Content Package Generator - http://www.reload.ac.uk-->
+<manifest xmlns="http://www.imsglobal.org/xsd/imscp_v1p1" xmlns:imsmd="http://ltsc.ieee.org/xsd/LOM" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_v1p3" xmlns:imsss="http://www.imsglobal.org/xsd/imsss" xmlns:adlseq="http://www.adlnet.org/xsd/adlseq_v1p3" xmlns:adlnav="http://www.adlnet.org/xsd/adlnav_v1p3" identifier="MANIFEST-F670ABD4B72960A08E449C69AB4959D3" xsi:schemaLocation="http://www.imsglobal.org/xsd/imscp_v1p1 imscp_v1p1.xsd http://ltsc.ieee.org/xsd/LOM lom.xsd http://www.adlnet.org/xsd/adlcp_v1p3 adlcp_v1p3.xsd http://www.imsglobal.org/xsd/imsss imsss_v1p0.xsd http://www.adlnet.org/xsd/adlseq_v1p3 adlseq_v1p3.xsd http://www.adlnet.org/xsd/adlnav_v1p3 adlnav_v1p3.xsd">
+  <organizations default="ORG-D1B885F6BDA8A25B8070CE0BA117834D">
+    <organization identifier="ORG-D1B885F6BDA8A25B8070CE0BA117834D" structure="hierarchical">
+      <title>Unidad 1, Objetivo 1.3</title>
+      <item identifier="ITEM-A986F1BAD8A7D2C76362DD2E3CDA6444" isvisible="true">
+        <title>Objetivo 1.3</title>
+      </item>
+    </organization>
+  </organizations>
+  <resources>
+    <resource identifier="RES-EC12C5E4D849CC2BC2165BD5025D9BBF" adlcp:scormType="sco" type="webcontent" href="index.html">
+      <file href="index.html" />
+      <file href="/C:/Users/LMC/00_EMI/2020_2/REPOs_org_ecuacionesdiferenciales/EDO-2020-2/11_EcuacionesLinealesHomogeneasPrimerYSegundoOrden/LinealesHomogeneasPrimeroYSegundo.tex" />
+      <file href="images/02_Circuito_RC.JPG" />
+      <file href="images/CIRCUITO_RLC_serie.JPG" />
+      <file href="img1.png" />
+      <file href="img10.png" />
+      <file href="img11.png" />
+      <file href="img12.png" />
+      <file href="img13.png" />
+      <file href="img14.png" />
+      <file href="img15.png" />
+      <file href="img16.png" />
+      <file href="img17.png" />
+      <file href="img18.png" />
+      <file href="img19.png" />
+      <file href="img2.png" />
+      <file href="img20.png" />
+      <file href="img21.png" />
+      <file href="img22.png" />
+      <file href="img23.png" />
+      <file href="img24.png" />
+      <file href="img25.png" />
+      <file href="img26.png" />
+      <file href="img27.png" />
+      <file href="img28.png" />
+      <file href="img29.png" />
+      <file href="img3.png" />
+      <file href="img30.png" />
+      <file href="img31.png" />
+      <file href="img32.png" />
+      <file href="img33.png" />
+      <file href="img34.png" />
+      <file href="img35.png" />
+      <file href="img36.png" />
+      <file href="img37.png" />
+      <file href="img38.png" />
+      <file href="img39.png" />
+      <file href="img4.png" />
+      <file href="img40.png" />
+      <file href="img41.png" />
+      <file href="img42.png" />
+      <file href="img43.png" />
+      <file href="img44.png" />
+      <file href="img45.png" />
+      <file href="img46.png" />
+      <file href="img47.png" />
+      <file href="img48.png" />
+      <file href="img49.png" />
+      <file href="img5.png" />
+      <file href="img6.png" />
+      <file href="img7.png" />
+      <file href="img8.png" />
+      <file href="img9.png" />
+      <file href="LinealesHomogeneasPrimeroYSegundo.css" />
+      <file href="LinealesHomogeneasPrimeroYSegundo.html" />
+      <file href="node1.html" />
+      <file href="node2.html" />
+      <file href="node3.html" />
+      <file href="node4.html" />
+    </resource>
+  </resources>
+</manifest>
+

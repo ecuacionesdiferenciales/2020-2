@@ -1,0 +1,370 @@
+\documentclass[12pt]{article}
+\usepackage[total={18cm,22cm},top=1cm, left=2cm]{geometry}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\def\TresOp#1#2#3{
+\begin{itemize}
+\item[A)] #1
+\item[B)] #2
+\item[C)] #3
+\end{itemize}
+}
+\def\LaFormulaFXYA{
+$\int P(x,y)dx+\int\left[Q(x,y)-\frac{\partial}{\partial y}\int P(x,y)dx\right]dy$
+}
+\def\LaFormulaFXYB{
+$\int P(x,y)dy+\int\left[Q(x,y)+\frac{\partial}{\partial y}\int P(x,y)dx\right]dy$
+}
+\def\LaFormulaFXYC{
+$\int P(x,y)dy+\int\left[Q(x,y)-\frac{\partial}{\partial y}\int P(x,y)dx\right]dx$
+}
+
+\begin{document}
+\begin{enumerate}
+% 1
+\item Son ejemplos de ecuaciones diferenciales para los que se conocen métodos de solución
+\TresOp{Ecuaciones diferenciales funcionales.}
+{Ecuaciones estocásticas y ecuaciones separables.}
+{Ecuaciones de variables separables y ecuaciones homogéneas.}
+{\tiny R=C}
+% 2
+\item Si una ecuación diferencial se puede escribir en la forma $f_{1}(x)dx+f_{2}(y)dy=0$ se dice que 
+es una ecuación de tipo
+\TresOp{Variables separables}{Homogénea}{Estocástica}
+{\tiny R=A}
+% 3
+\item La ecuación diferencial $\frac{dy}{dx}+e^{x}y=e^{x}y^{2}$ se puede reescribir como
+\TresOp{$\frac{dy}{dx}+e^{x}(y+y^{2})=0$}
+{$\frac{dy}{dx}+e^{x}(y-y^{2})=0$}
+{$\frac{dy}{dx}+e^{x}(y^{2}-y)=0$}
+{\tiny R=B}
+% 4
+\item ?`A qué es igual la integral $\int e^{x}dx$?
+\TresOp{$e^{x}$}
+{$2e^{x}$}
+{$e^{2x}$}
+{\tiny R=A}
+% 5
+\item ?`A qué es igual la integral $\int\frac{dy}{y-y^{2}}$?
+\TresOp{$\ln\frac{y}{1-y}$}
+{$\ln\left|\frac{1}{y(1-y)}\right|$}
+{$\ln\left|\frac{y}{1-y}\right|$}
+{\tiny R=C}
+\newpage
+% 6
+\item ?`Cuál es la solución de la ecuación $\frac{dy}{y-y^{2}}+e^{x}dx=0$?
+\TresOp{$\frac{y^{2}}{2}-\frac{y^{3}}{3}+e^{x}=C$}
+{$\ln\left|\frac{y}{1-y}\right|+e^{x}=C$}
+{$\ln\left|\frac{y}{1-y}\right|+e^{2x}=C$}
+{\tiny R=B}
+% 7
+\item Si una ecuación diferencial se puede reescribir en la forma 
+$\frac{dy}{dx}=F\left(\frac{y}{x}\right)$, se dice que es una ecuación
+\TresOp{diferencial de variables separables}
+{diferencial homogénea}
+{diferencial exacta}
+{\tiny R=B}
+% 8
+\item La ecuación diferencial $(x^{2}+y^{2})dx+2xydy$ se puede reescribir como
+\TresOp{$\frac{dy}{dx}=-\frac{1+(y/x) ^{2}}{2(y/x)}$}
+{$\frac{dy}{dx}=\frac{1+(y/x) ^{2}}{2(y/x)}$}
+{$\frac{dy}{dx}=-\frac{(y/x) ^{2}}{2(y/x)+1}$}
+{\tiny R=A}
+% 9
+\item ?`A qué es igual la integral $\int\frac{dx}{x}$?
+\TresOp{$\ln\left(\frac{1}{x}\right)$}
+{$\ln x^{2}$}
+{$\ln\left|x\right|$}
+{\tiny R=C}
+% 10
+\item ?`A qué es igual la integral $\int\frac{2vdv}{1+3v ^{2}}$?
+\TresOp{$\ln\left|1+3v^{2}\right|$}
+{$3\ln\left|1+3v^{2}\right|$}
+{$\frac{1}{3}\ln\left|1+3v^{2}\right|$}
+{\tiny R=C}
+\newpage
+%11
+\item ?`Cuál es la solución de la ecuación $(x^{2}+y^{2})dx+2xydy$?
+\TresOp{$x(x^{2}+3y^{2})=C$}
+{$x^{2}(x+3y^{2})=C$}
+{$x(2x+3y^{2})=C$}
+{\tiny R=A}
+%12
+\item Una ecuación de la forma $P(x,y)dx+Q(x,y)dy=0$ para la cual se cumple que 
+$\frac{\partial P}{\partial y}=\frac{\partial Q}{\partial x}$ es
+\TresOp{ecuación diferencial homogénea}
+{ecuación diferencial exacta}
+{ecuación diferencial de variables separables}
+{\tiny R=B}
+%13
+\item Si $\frac{\partial P}{\partial y}=\frac{\partial Q}{\partial x}$ una fórmula para 
+la solución de la ecuación diferencial $P(x,y)dx+Q(x,y)dy=0$ es
+\TresOp{$F(x,y)=C$, donde $F(x,y)=$\LaFormulaFXYA}
+{$F(x,y)=C$, donde $F(x,y)=$\LaFormulaFXYB}
+{$F(x,y)=C$, donde $F(x,y)=$\LaFormulaFXYC}
+{\tiny R=A}
+%14
+\item La solución de la ecuación diferencial $(2xy+1)dx+(x^{2}+4y)dy=0$ es
+\TresOp{$xy^{2}+x^{2}+2y=C$}
+{$x^{2}y+x^{2}+2y=C$}
+{$x^{2}y+x+2y^{2}=C$}
+{\tiny R=C}
+%15
+\item Si consideramos que $\frac{\partial F}{\partial x}=2xy+1$, y lo integramos con respecto 
+a $x$ (tratando a $y$ como constante) el resultado es
+\TresOp{$x^{2}y+x+c_{1}(y)$}
+{$x^{2}y+x-1$}
+{$xy^{2}+x+c_{1}(y)$}
+{\tiny R=A}
+\newpage
+%16
+\item Si consideramos que $\frac{\partial F}{\partial y}=x^{2}+4y$, y lo integramos con respecto 
+a $y$ (tratando a $x$ como constante) el resultado es
+\TresOp{$x^{2}y+2y+c_{2}(x)$}
+{$x^{2}y+2y^{2}+c_{2}(x)$}
+{$x^{2}y+2y^{2}+1$}
+{\tiny R=B}
+%17
+\item La ecuación diferencial $x^{2}\frac{dy}{dx}-y^{2}=x^{2}y\frac{dy}{dx}$ se puede reescribir en 
+la forma
+\TresOp{$x^{2}(1-y)\frac{dy}{dx}-y^{2}=0$}
+{$x^{2}y\frac{dy}{dx}-y^{2}=0$}
+{$x^{2}(1-y)\frac{dy}{dx}+y^{2}=0$}
+{\tiny R=A}
+%18
+\item La solución de la ecuación $(\frac{1}{y^{2}}-\frac{1}{y})dy-\frac{dx}{x^{2}}=0$
+\TresOp{$\frac{1}{y}+\ln\left|y\right|-\frac{1}{x}=C$}
+{$-\frac{1}{y}-\ln\left|y\right|+\frac{1}{x}=C$}
+{$\ln\left|\frac{1}{y}\right|-\ln\left|y\right|+\frac{1}{x}=C$}
+{\tiny R=B}
+%19
+\item Para resolver la ecuación diferencial homogénea $\frac{dy}{dx}=\frac{xy-y^{2}}{x^{2}}$ 
+podemos usar la función
+\TresOp{$F(v)=v^{2}+v$}
+{$F(v)=v-v^{2}$}
+{$F(v)=\frac{1}{v-v^{2}}$}
+{\tiny R=B}
+%20
+\item La solución de la ecuación $\frac{dx}{x}+\frac{dv}{v^{2}}=0$ es
+\TresOp{$\ln\left|x\right|-\frac{1}{v^{2}}=C$}
+{$\ln\left|x\right|+\frac{1}{v}=C$}
+{$\ln\left|x\right|-\frac{1}{v}=C$}
+{\tiny R=C}
+\newpage
+%21
+\item La solución de la ecuación diferencial homogénea $\frac{dy}{dx}=\frac{xy-y^{2}}{x^{2}}$ es
+\TresOp{$\ln\left|x\right|-\frac{x}{y}=C$}
+{$\ln\left|x\right|+\frac{x}{y}=C$}
+{$e^{x}-\frac{y}{x}$}
+{\tiny R=A}
+%22
+\item Si consideramos que $\frac{\partial F}{\partial x}=e^{x}+1$, y lo integramos con respecto 
+a $x$ (tratando a $y$ como constante) el resultado es
+\TresOp{$e^{x}+x+c_{1}(y)$}
+{$e^{x}+1+c_{1}(y)$}
+{$\ln\left|x\right|+c_{1}(y)$}
+{\tiny R=A}
+%23
+\item Si consideramos que $\frac{\partial F}{\partial y}=1$, y lo integramos con respecto 
+a $y$ (tratando a $x$ como constante) el resultado es
+\TresOp{$y+c_{2}(y)$}
+{$y+c_{2}(x)$}
+{$xy+c_{2}(x)$}
+{\tiny R=B}
+%24
+\item La solución de la ecuación diferencial exacta $(e^{x}+1)dx+dy=0$ es
+\TresOp{$\ln\left|x\right|+x+y=C$}
+{$e^{x}+x+y=C$}
+{$e^{x}+x+\frac{1}{y}=C$} 
+{\tiny R=B}
+%25
+\item La ecuación $(y\cos xy+2x)dx+(x\cos xy)dy=0$ es
+\TresOp{una ecuación diferencial de variables separables.}
+{una ecuación diferencial exacta.}
+{una ecuación diferencial homogénea.}
+{\tiny R=B}
+\newpage
+%26
+\item Si consideramos que  $\frac{\partial F}{\partial x}=y\cos xy+2x$, y lo integramos con respecto 
+a $x$ (tratando a $y$ como constante) el resultado es 
+\TresOp{$y\cos xy+2x$}
+{$\sin xy+x^{2}+c_{1}(y)$}
+{$\sin xy+x^{2}+c_{1}(y)$}
+{\tiny R=C}
+%27
+\item Si consideramos que  $\frac{\partial F}{\partial y}=x\cos xy$, y lo integramos con respecto 
+a $y$ (tratando a $x$ como constante) el resultado es
+\TresOp{$\sin xy+c_{2}(y)$}
+{$\sin xy+c_{2}(x)$}
+{$x\cos xy$}
+{\tiny R=B}
+%28
+\item ?`Cuál es la solución de la ecuación diferencial $(y\cos xy+2x)dx+(x\cos xy)dy=0$?
+\TresOp{$\sin xy+x^{2}=C$}
+{$\cos xy+2x$}
+{$\cos xy$}
+{\tiny R=A}
+%29
+\item La ecuación $xdy-ydx=0$ puede ser convertida a exacta utilizando el factor
+\TresOp{$\frac{1}{x^{2}}$}
+{$x$}
+{$\frac{1}{x}$}
+{\tiny R=A}
+%30
+\item Para una ecuación de la forma $M(t,y)+N(t,y)\frac{dy}{dt}=0$, si la función 
+$\frac{\frac{\partial M}{\partial y}-\frac{\partial N}{\partial t}}{N}$ depende únicamente de $t$, 
+el factor integrante se calcula con la fórmula
+\TresOp{$e^{\int\frac{\left[\frac{\partial M}{\partial y}-\frac{\partial N}{\partial t}\right]dt}{N}}$}
+{$\frac{\frac{\partial M}{\partial y}-\frac{\partial N}{\partial t}}{N}$}
+{$\frac{d}{dt}\left(\frac{\frac{\partial M}{\partial y}-\frac{\partial N}{\partial t}}{N}\right)$}
+{\tiny R=A}
+\newpage
+%31
+\item ?`Cuál es el factor integrante para ecuación $y+\frac{dy}{dt}=0$?
+\TresOp{$\frac{t^{2}}{2}$}
+{$e^{t^{2}}$}
+{$e^{t}$}
+{\tiny R=C}
+%32
+\item ?`Cuál es la solución general de la ecuación $y+\frac{dy}{dt}=0$?
+\TresOp{$y=C\ln\left|t\right|$}
+{$y=Ce^{-t}$}
+{$y=Ce^{t}$}
+{\tiny R=B}
+%33
+\item Si $R$ y $L$ son dos constantes positivas, ?`Cuál es la solución general de la ecuación 
+diferencial $\frac{di}{dt}+\frac{R}{L}i(t)=0$?
+\TresOp{$i(t)=I_{0}(e^{-Rt/L}+\ln\left|Rt/L\right|)$ donde $I_{0}$ es una constante.}
+{$i(t)=I_{0}\ln\left|Rt/L\right|$ donde $I_{0}$ es una constante.}
+{$i(t)=I_{0}e^{-Rt/L}$ donde $I_{0}$ es una constante.}
+{\tiny R=C}
+%34
+\item Si $R$ y $C$ son dos constantes positivas, considere la ecuación diferencial 
+$\frac{dv}{dt}+\frac{v}{RC}=0$, si substituimos $v=k_{0}e^{st}$ (donde $k_{0}$ es una constante) 
+en la ecuación diferencial obtenemos
+\TresOp{$(s^{2}+\frac{1}{RC})k_{0}e^{st}=0$}
+{$(s+\frac{1}{RC})k_{0}e^{st}=0$}
+{Niguno de los anteriores.}
+{\tiny R=B}
+%35
+\item La ecuación $a_{n}(t)\frac{d^{n}y}{dt^{n}}+a_{n-1}(t)\frac{d^{n-1}y}{dt^{n-1}}+\cdots
+a_{1}(t)\frac{dy}{dt}+a_{0}(t)y(t)=g(t)$ cuando $g(t)=0$ es
+\TresOp{una ecuación diferencial lineal homogénea.}
+{una ecuación diferencial lineal no homogénea.}
+{una ecuación diferencial no lineal homogénea.}
+{\tiny R=A}
+\newpage
+%36
+\item Si $R$, $L$ y $C$ son constantes positivas, al sustituir $v(t)=K_{0}e^{st}$ (donde $K_{0}$ y 
+$s$ son constantes) en la ecuación $LC\frac{d^{2}v}{dt^{2}}+RC\frac{dv}{dt}+v(t)=0$ se obtiene
+\TresOp{$(LCs^{2}+RCs+1)K_{0}e^{st}=0$}
+{$\frac{\partial M}{\partial y}=\frac{\partial N}{\partial x}$}
+{$(LCs^{2}+RCs+1)K_{0}e^{-st}=0$}
+{\tiny R=A}
+%37
+\item Si $a$, $b$ y $c$ son constantes, para la ecuación  $a\frac{d^{2}y}{dt^{2}}+b\frac{dy}{dt}+cy=0$ 
+la ecuación $as^{2}+bs+c=0$ recibe el nombre de 
+\TresOp{ecuación no lineal homogénea.}
+{ecuación lineal.}
+{ecuación característica.}
+{\tiny R=C}
+%38
+\item Para la ecuación diferencial $LC\frac{d^{2}v}{dt^{2}}+RC\frac{dv}{dt}+v(t)=0$, ?`Cuál es la 
+forma de la solución cuando las raíces de la ecuación $LCs^{2}+RCs+1=0$, $s_{1}$ y $s_{2}$ son 
+reales y diferentes?
+\TresOp{$V_{1}e^{s_{1}t}+V_{2}te^{s_{2}t}$, donde $V_{1}$ y $V_{2}$ son constantes.}
+{$V_{1}e^{s_{1}t}+V_{2}e^{s_{2}t}$, donde $V_{1}$ y $V_{2}$ son constantes.}
+{$V_{1}\ln(s_{1}t)+V_{2}\ln(s_{2}t)$, donde $V_{1}$ y $V_{2}$ son constantes.} 
+{\tiny R=B}
+%39
+\item Para la ecuación diferencial $LC\frac{d^{2}v}{dt^{2}}+RC\frac{dv}{dt}+v(t)=0$, ?`Cuál es la 
+forma de la solución cuando las raíces de la ecuación $LCs^{2}+RCs+1=0$, $s_{1}$ y $s_{2}$ son 
+reales e iguales ($s_{1}=s_{2}=s$)?
+\TresOp{$V_{1}e^{st}+V_{2}te^{st}$, donde $V_{1}$ y $V_{2}$ son constantes.}
+{$V_{1}e^{st}+V_{2}e^{st}$, donde $V_{1}$ y $V_{2}$ son constantes.}
+{$V_{1}\ln(st)+V_{2}\ln(st)$, donde $V_{1}$ y $V_{2}$ son constantes.}
+{\tiny R=A}
+%40
+\item Para la ecuación diferencial $LC\frac{d^{2}v}{dt^{2}}+RC\frac{dv}{dt}+v(t)=0$, ?`Cuál es la 
+forma de la solución cuando las raíces de la ecuación $LCs^{2}+RCs+1=0$, $s_{1}$ y $s_{2}$ son 
+complejas conjugadas ($s_{1}=\alpha+j\beta,\,\,s_{2}=\alpha-j\beta$ donde $\alpha>0$ y $\beta>0$)?
+\TresOp{$V_{1}e^{\alpha t}+V_{2}te^{\beta t}$, donde $V_{1}$ y $V_{2}$ son constantes.}
+{$V_{1}e^{\alpha t}+V_{2}e^{\beta t}$, donde $V_{1}$ y $V_{2}$ son constantes.}
+{$e^{\alpha t}(V_{1}\cos\beta t+V_{2}\sin\beta t)$, donde $V_{1}$ y $V_{2}$ son constantes.}
+{\tiny R=C}
+\newpage
+%41
+\item Para el problema de valor inicial $0.00001\frac{d^{2}y}{dt^{2}}+0.01\frac{dy}{dt}+y(t)=0$ 
+sujeto a $y(0)=5$ y $y^{\prime}(0)=1000$. ?`Cuáles son las raíces de $0.00001s^{2}+0.01s+1=0$?
+\TresOp{$-50,\,\,-100$}
+{$-112.70,\,\,-887.29$}
+{$-112.70,\,\,-100.25$}
+{\tiny R=B}
+%42
+\item Para el problema de valor inicial $0.00001\frac{d^{2}y}{dt^{2}}+0.01\frac{dy}{dt}+y(t)=0$ 
+sujeto a $y(0)=5$ y $y^{\prime}(0)=1000$. ?`Cuáles son los valores de las constantes 
+$V_{1}$ y $V_{2}$ de la solución al problema $v(t)=V_{1}e^{s_{1}t}+V_{2}e^{s_{2}t}$?
+\TresOp{$10.3407,\,\,-5.3407$}
+{$7.0184,\,\,-2.0184$}
+{$15.6304,\,\,-10.6304$}
+{\tiny R=B}
+%43
+\item Para el problema de valor inicial $0.000025\frac{d^{2}y}{dt^{2}}+0.01\frac{dy}{dt}+y(t)=0$ 
+sujeto a $y(0)=5$ y $y^{\prime}(0)=1000$. ?`Cuáles son las raíces de $0.000025s^{2}+0.01s+1=0$?
+\TresOp{$-50+j100,\,\,-50-j100$}
+{$-112.70,\,\,-887.29$}
+{$-200.00,\,\,-200.00$}
+{\tiny R=C}
+%44
+\item Para el problema de valor inicial $0.000025\frac{d^{2}y}{dt^{2}}+0.01\frac{dy}{dt}+y(t)=0$ 
+sujeto a $y(0)=5$ y $y^{\prime}(0)=1000$. ?`Cuáles son los valores de las constantes 
+$V_{1}$ y $V_{2}$ de la solución al problema $v(t)=V_{1}e^{s_{1}t}+V_{2}te^{s_{2}t}$?
+\TresOp{$5.0,\,\,100.0$}
+{$5.0,\,\,300.0$}
+{$5.0,\,\,2000.0$}
+{\tiny R=C}
+%45
+\item Para el problema de valor inicial $0.0001\frac{d^{2}y}{dt^{2}}+0.01\frac{dy}{dt}+y(t)=0$ 
+sujeto a $y(0)=5$ y $y^{\prime}(0)=1000$. ?`Cuáles son las raíces de $0.0001s^{2}+0.01s+1=0$?
+\TresOp{$-50+j86.6025,\,\,-50-j86.6025$}
+{$-112.70,\,\,-887.29$}
+{$-200.00,\,\,-200.00$}
+{\tiny R=A}
+\newpage
+%46
+\item Para el problema de valor inicial $0.000025\frac{d^{2}y}{dt^{2}}+0.01\frac{dy}{dt}+y(t)=0$ 
+sujeto a $y(0)=5$ y $y^{\prime}(0)=1000$. ?`Cuáles son los valores de las constantes 
+$V_{1}$ y $V_{2}$ de la solución al problema $v(t)=e^{\alpha t}(V_{1}\cos\beta t+V_{2}\sin\beta t)$?
+\TresOp{$5.0,\,\,14.4337$}
+{$5.0,\,\,30.4337$}
+{$5.0,\,\,2000.0$}
+{\tiny R=A}
+%47
+\item Sobre el intervalo $(0,\infty)$, el conjunto de funciones 
+$\left\{f_{1},\,f_{2}\right\}=\left\{2t,\,\left|t\right|\right\}$ es
+\TresOp{linealmente dependientes.}
+{linealmente independientes.}
+{ninguno de los anteriores.}
+{\tiny R=A}
+%48
+\item ?`Cuál de las siguientes funciones es una solución de la ecuación $y^{\prime\prime}-y=0$?
+\TresOp{$\cos t$}
+{$e^{t}$}
+{$e^{t}\cos t$}
+{\tiny R=B}
+%49
+\item Usando el método de reducción de orden, partiendo de la solución $y_{1}=e^{t}$ de 
+$y^{\prime\prime}-y=0$, se propone encontrar $y=ue^{t}, $ ?`Cuál de las siguientes ecuaciones es la que se obtiene para encontrar la función $w$? (donde $w=u^{\prime}$) 
+\TresOp{$w^{\prime}+2w=0$}
+{$\frac{d}{dt}(e^{t}w)=0$}
+{$w^{\prime}-2w=0$}
+{\tiny R=A}
+%50
+\item ?`Cuál es el Wronskiano del conjunto de funciones 
+$\left\{y_{1},y_{2}\right\}=\left\{t^{2},t^{2}\ln(t)\right\}$ sobre el intervalo $(0,\infty)$?
+\TresOp{$t^{3}$}
+{$1$}
+{$t\ln(t)$}
+{\tiny R=A}
+\end{enumerate}
+\end{document}

@@ -1,0 +1,52 @@
+\documentclass[12pt]{article}
+\usepackage{tikz}
+\usepackage{pgf-umlcd}
+\begin{document}
+ \section{COMPRUEBE}
+ Considerando $P(x,y)dx+Q(x,y)dy=0$ como
+ \begin{equation}
+ (2xy+1)dx+(x^{2}+4y)dy=0.
+\end{equation}
+Dado que
+\begin{equation}
+ \frac{\partial P}{\partial y}=
+\frac{\partial Q}{\partial x}=2x,
+\end{equation}
+ COMPRUEBE que la sustituci\'{o}n de las expresiones $P(x,y)=2xy+1$ y $Q(x,y)=x^{2}+4y$ en la f\'{o}rmula
+ \begin{equation}
+ F(x,y)=\int P(x,y)dx+
+\int\left[Q(x,y)-
+\frac{\partial}{\partial y}\int P(x,y)dx\right]dy.
+\label{Ecu77-7}
+\end{equation}
+ da como resultado
+\begin{equation}
+ F(x,y)=x^{2}y+x+2y^{2}.
+\end{equation}
+Comprobaci\'{o}n
+\begin{eqnarray}
+ \int P(x,y)dx&=&\int (2xy+1)dx\\
+ &=&2\int xydx+\int dx\\
+ &=&2(\frac{x^{2}}{2}y)+x\\
+ &=&x^{2}y+x
+ \label{EcuN}
+\end{eqnarray}
+Usando (\ref{EcuN})
+\begin{eqnarray}
+ \frac{\partial}{\partial y}\int P(x,y)dx&=&\frac{\partial}{\partial y}\left[x^{2}y+x\right]\\
+ &=&x^{2}
+\end{eqnarray}
+Ahora calculamos la integral
+\begin{eqnarray}
+\int\left[Q(x,y)-
+\frac{\partial}{\partial y}\int P(x,y)dx\right]dy&=&\int\left[(x^{2}+4y)-(x^{2})\right]dy\\
+&=&\int4ydy\\
+&=&2y^{2}
+\label{EcuN+3}
+\end{eqnarray}
+Por lo tanto, sustituyendo (\ref{EcuN}) y (\ref{EcuN+3}) en (\ref{Ecu77-7})
+\begin{equation}
+ F(x,y)=x^{2}y+x+2y^{2}
+\end{equation}
+que es lo que se quer\'{i}a comprobar.
+\end{document}
